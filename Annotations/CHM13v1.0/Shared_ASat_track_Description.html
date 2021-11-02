@@ -1,0 +1,38 @@
+<h2>Description</h2>
+<p>Shared ASat track, annotation of chromosome-specific haplotypes of alpha satellite higher-order repeats shared by two or more chromosomes (S1C1/5/19H1L, S2C13/21H1L and S2C14/22H1L) in T2T CHM13 human genome assembly release v1.0.</p>
+
+<h2>Methods</h2>
+
+<h3>cen13 - cen21</h3>
+
+<p>According to the <a href="https://docs.google.com/spreadsheets/d/1mO5-ZcaplNlH1go5mkplg_iGDVg6x6wDQ30AwDZBqd8" target="_blank">StV track statistics</a>, the most common StVs for cen13 and 21 were  S2C13/21H1L_13.1-11, S2C13/21H1L_13.1-7 and S2C13/21H1L_21.1-11. These complete sequences were extracted from StV track and aligned by MUSCLE (Edgar, 2004) and multiple alignments were used as HMMs with HMMER platform (Krogh et al., 1994, Eddy et al., 1998) using just these profiles as described for HumAS-HMMER-HOR (Uralsky et al., 2019). Chr13 and chr21 assemblies from CHM13 T2T v1.0 were processed and the output file was converted into a BED file and low-score and overlapping hits were filtered as described (Uralsky et al., 2019). BED files were opened in the UCSC Genome Browser. In the "Shared ASat" track, the names of the HORs show individual cen13 StVs (11mer or 7mer), but only the chromosome to which the HOR belongs is indicated by color.</p>
+
+<h3>cen14 - cen22</h3>
+
+<p>According to the StV track statistics, the most common StVs for cen14 and 22 were the full-size HORs S2C14/22H1L_14.1-8 and S2C14/22H1L_22.1-8. These sequences were treated as described above.</p>
+
+<h3>cen1 - cen5 - cen19</h3>
+
+<p>The active HOR arrays of cen1, cen5 and cen19 mostly consist of non-canonical dimer S1C1/5/19H1L.6/4-5. Dimer proportions in S1C1/5/19H1L HOR arrays: cen1 - 69%; cen5 - 45% and cen19 - 96% of the whole array length. Sequences of dimers were extracted for each chromosome separately from the HOR-track (AS_SF_Annot). The dimers from cen1 inversion (chr1:124130687-125858867) were reversed. From each set of dimers a random sample of 500 sequences was made, aligned by MUSCLE (Edgar, 2004) and used as HMMs (one for each chromosome). This did not yield satisfactory discrimination. So, multiple alignments were used to build a tree where dimers coming from each chromosome were marked. This tree showed that each chromosome has one or two major and well-isolated branchs (haplotypes), but also a lot of small branches which are also chromosome-specific, but sit nearby on the tree in a wide and mixed zone. Hence, all separate branches from this tree were extracted as sequences and used  as HMMs (cen1 - 6 branches, cen5 - 2 branches, cen19 - 6 branches) to haplotype CHM13 T2T v1.0 assembly. In "Shared ASat" track, the names of the HORs show each individual haplotype (e.g. S1C1/5/19_19c), but only the chromosome to which the haplotype belongs is indicated by color.</p>
+
+<p>See details: Altemose et al., 2021, Supplementary Materials and Methods, Section 3: Chromosome-specific Array Comparison. Resolving the shared ASat arrays S2C13/21H1L, S2C14/22H1L and S1C1/5/19H1L.</p>
+
+<!-- h2>Display Conventions and Configuration</h2 -->
+<!-- if there are special conventions, like colors, describe them here -->
+<!-- p></p -->
+
+<h2>References</h2>
+<p>Nicolas Altemose, Glennis Logsdon, Andrey V Bzikadze, Pragya Sidhwani, Sasha A Langley, Gina V. Caldas, Savannah J. Hoyt, Lev Uralsky, Fedor D. Ryabov, Colin Shew, Michael E.G. Sauria, Matthew Borchers, Ariel Gershman, Alla Mikheenko, Valery A. Shepelev, Tatiana Dvorkina, Olga Kunyavskaya, Mitchell R Vollger, Arang Rhie, Ann M. McCartney, Mobin Asri, Ryan Lorig-Roach, Kishwar Shafin, Sergey Aganezov, Daniel Olson, Leonardo Gomes de Lima, Tamara Potapova, Gabrielle A. Hartley, Marina Haukness, Peter Kerpedjiev, Fedor Gusev, Kristof Tigyi, Shelise Y. Brooks, Alice Young, Sergey Nurk, Sergey Koren, Sofie Salama, Benedict Paten, Evgeny I. Rogaev, Aaron M Streets, Gary H Karpen, Abby Dernburg, Beth A Sullivan, Aaron F Straight, Travis Wheeler, Jennifer L. Gerton, Evan Eichler, Adam M. Phillippy, Winston Timp, Megan Y. Dennis, Rachel J O'Neill, Justin M Zook, Michael Schatz, Pavel A Pevzner, Mark Diekhans, Charles H. Langley, Ivan A. Alexandrov, Karen H Miga. <i>bioRxiv</i> 2021.07.12.452052; doi: <a href="https://doi.org/10.1101/2021.07.12.452052" target="_blank">https://doi.org/10.1101/2021.07.12.452052</a>.</p>
+
+<h2>Release history</h2>
+<ol>
+  <li>Shared_Sat - First public version of the Shared_Sat annotation.
+</ol>
+
+<h2>Contact</h2>
+<p>Contact <a href="mailto:fedorrik1@gmail.com">Fedor Ryabov &lt;fedorrik1@gmail.com&gt;</a></p>
+<p>Contact <a href="mailto:ivanalx@hotmail.com">Ivan A. Alexandrov &lt;ivanalx@hotmail.com&gt;</a></p>
+
+<h2>Credits</h2>
+<p>Fedor Ryabov (Moscow Polytechnic University, Russia)</p>
+<p>Ivan A. Alexandrov (1. Vavilov Institute of General Genetics, Moscow, Russia; 2. Research Center of Biotechnology of the Russian Academy of Sciences, Moscow, Russia)</p>
